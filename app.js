@@ -283,7 +283,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   const set = (id, [s,i], t='l') => { const e = $(id); if (e) e.src = src(s,i,t); };
   set('#introA', INTRO.a); set('#introB', INTRO.b,'m'); set('#directImg', INTRO.direct);
   const row = $('#marq');
-  const html = MARQ.map(([a,b],i)=>`<img src="${src(a,b,'m')}" alt="" width="630" height="420" decoding="async" ${i<6?'loading="eager"':'loading="lazy"'}>`).join('');
+  const html = MARQ.map(([a,b],i)=>`<img src="${src(a,b,'m')}" alt="" width="630" height="420" loading="eager">`).join('');
   row.innerHTML = html + html;
 })();
 
