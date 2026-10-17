@@ -267,7 +267,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
         setTimeout(() => setInterval(() => {
           if (!vis || document.hidden || Date.now() < hold || document.querySelector('.lb.on,.lightbox.on')) return;
           if (track.scrollLeft + W() >= track.scrollWidth - 4) track.scrollTo({left:0, behavior:'smooth'}); else track.scrollBy({left:W(), behavior:'smooth'});
-        }, 4500), 1200 * k);
+        }, 4500), 1200 * (k % 3));
       }
     }
   });
