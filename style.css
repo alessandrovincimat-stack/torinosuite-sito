@@ -343,7 +343,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);paddin
 /* indirizzo sull'alloggio e sezione eventi */
 .apt .where{display:flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.04em;color:var(--brown-m);margin:-6px 0 16px}
 .apt .where svg{flex:none;width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round}
-.apt .where.far{display:inline-flex;padding:7px 14px;border-radius:4px;background:var(--sand-l);color:var(--brown-d);font-weight:600}
+.apt .where{display:inline-flex;padding:8px 14px;border-radius:4px;background:var(--sand-l);color:var(--brown-d);font-weight:600;line-height:1.35}
 .events{background:var(--cream)}
 .evlist{list-style:none;margin:0 0 28px;padding:0;border-top:1px solid var(--line)}
 .evlist li{display:grid;grid-template-columns:150px 1fr auto;gap:clamp(16px,3vw,40px);align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
@@ -487,6 +487,5 @@ html[lang="en"] header.top.solid .lang [data-l="it"]{opacity:.5}
 .addr{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;-webkit-tap-highlight-color:rgba(0,0,0,.1)}
 .addr:hover{opacity:.8}
 
-.apt a.where{text-decoration:none;padding:8px 0;margin:-14px 0 8px}
-.apt a.where.far{padding:7px 14px;margin:-6px 0 16px}
+.apt a.where{text-decoration:none;margin:-6px 0 16px;min-height:44px;box-sizing:border-box}
 .apt a.where:hover span,.apt a.where:hover{text-decoration:underline}

@@ -358,7 +358,7 @@ const EN = {
 "I dati non sono diffusi né venduti. Possono essere trattati da fornitori che operano per nostro conto (Smoobu, Stripe, posta Google, GitHub), da consulenti fiscali e contabili e, nei casi previsti, da Questura, ISTAT e Comune. Alcuni fornitori possono trattare dati fuori dallo Spazio economico europeo con garanzie adeguate, come le clausole contrattuali standard.": "Data is not disclosed or sold. It may be processed by suppliers acting on our behalf (Smoobu, Stripe, Google mail, GitHub), by tax and accounting advisers and, where required, by the Police, ISTAT and the City. Some suppliers may process data outside the European Economic Area with adequate safeguards, such as standard contractual clauses.",
 "Il conferimento dei dati del modulo è facoltativo, ma senza di essi non possiamo risponderti.": "Providing the form data is optional, but without it we cannot reply to you.",
 "Ultimo aggiornamento: 17 ottobre 2026.": "Last updated: 17 October 2026.",
-"Torino": "Turin",
+  "Torino": "Turin",
 "Scegli le date di arrivo e di partenza.": "Choose your arrival and departure dates.",
 "La data di arrivo è già passata.": "The arrival date has already passed.",
 "La partenza deve essere dopo l'arrivo.": "Departure must be after arrival.",

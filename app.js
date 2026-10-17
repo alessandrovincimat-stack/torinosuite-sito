@@ -282,6 +282,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     box.className = 'cityline ' + (has.some(c=>c.img) ? 'photos' : 'plain');
     box.innerHTML = list.map((c,k)=>`<div class="cp${k===0?' on':''}" tabindex="0" ${c.img?`style="background-image:url(img/torino/${c.k}.jpg)"`:''}>
       <div class="ov"><small>${c.d||'Torino'}</small><h4>${c.t}</h4><p>${c.x}</p></div></div>`).join('');
+    if (typeof applyLang === 'function') applyLang(box);
     const P = $$('.cp', box);
     P.forEach(p => { const on = () => { P.forEach(q=>q.classList.remove('on')); p.classList.add('on'); };
       p.addEventListener('mouseenter', on); p.addEventListener('focus', on); p.addEventListener('click', on); });
