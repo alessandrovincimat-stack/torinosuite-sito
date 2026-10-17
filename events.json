@@ -1,0 +1,17 @@
+{
+  "updated": "2026-10-17",
+  "note_it": "Date indicative, riprese da calendari pubblici: possono cambiare. I programmi aggiornati sono sui siti degli organizzatori e su turismotorino.org.",
+  "note_en": "Dates are indicative, taken from public calendars, and may change. Check the organisers' websites and turismotorino.org for the latest programme.",
+  "events": [
+    {"start":"2026-10-29","end":"2026-11-01","cat":"music","title":"Club to Club","it":"Festival di musica elettronica e sperimentale, alle OGR e al Lingotto Fiere.","en":"Electronic and experimental music festival at OGR and Lingotto Fiere."},
+    {"start":"2026-10-30","end":"2026-11-01","cat":"art","title":"Artissima","it":"La fiera internazionale d'arte contemporanea, all'Oval, Lingotto Fiere.","en":"The international contemporary art fair, at the Oval, Lingotto Fiere."},
+    {"start":"2026-11-15","end":"2026-11-22","cat":"sport","title":"Nitto ATP Finals","it":"Il torneo di tennis dei migliori otto del mondo, all'Inalpi Arena.","en":"The season-ending tennis tournament for the world's top eight, at the Inalpi Arena."},
+    {"start":"2026-11-24","end":"2026-12-02","cat":"cinema","title":"Torino Film Festival","it":"44ª edizione del festival di cinema; l'inaugurazione è al Teatro Regio.","en":"44th edition of the film festival; the opening night is at the Teatro Regio."},
+    {"start":"2026-11-29","end":"2026-11-29","cat":"sport","title":"Maratona di Torino","it":"La corsa attraversa la città: la domenica si cammina tra tifosi e podisti.","en":"The race runs through the city: on Sunday you stroll among fans and runners."},
+    {"start":"2026-11-01","end":"2027-01-31","cat":"city","fmt":"month","title":"Luci d'Artista","it":"Installazioni luminose di artisti contemporanei lungo le vie e le piazze, da novembre a gennaio.","en":"Light installations by contemporary artists along the streets and squares, from November to January."},
+    {"start":"2027-04-07","end":"2027-04-11","cat":"culture","title":"Biennale Democrazia","it":"Incontri e dibattiti pubblici con ospiti italiani e internazionali.","en":"Public talks and debates with Italian and international guests."},
+    {"start":"2027-04-23","end":"2027-05-01","cat":"music","title":"Torino Jazz Festival","it":"Concerti in teatri, club e piazze della città.","en":"Concerts in theatres, clubs and squares across the city."},
+    {"start":"2027-05-13","end":"2027-05-17","cat":"books","title":"Salone Internazionale del Libro","it":"Cinque giorni di libri, autori e incontri al Lingotto Fiere.","en":"Five days of books, authors and meetings at Lingotto Fiere."},
+    {"start":"2027-06-24","end":"2027-06-24","cat":"city","title":"Festa di San Giovanni","it":"La festa del patrono di Torino, con i fuochi d'artificio sul fiume.","en":"The feast of Turin's patron saint, with fireworks over the river."}
+  ]
+}
