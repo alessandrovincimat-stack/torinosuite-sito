@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,address=no">
+<title>Torino Suite — Apartments in the heart of Turin, Via Carlo Alberto 31</title>
+<meta name="description" content="Five renovated apartments in a historic building, 200 metres from Piazza San Carlo. Self check-in, quiet courtyard, book direct online.">
+<link rel="canonical" href="https://torinosuite.it/en">
+<link rel="alternate" hreflang="it" href="https://torinosuite.it/">
+<link rel="alternate" hreflang="en" href="https://torinosuite.it/en">
+<link rel="alternate" hreflang="x-default" href="https://torinosuite.it/">
+<meta property="og:url" content="https://torinosuite.it/en">
+<meta property="og:title" content="Torino Suite — Apartments in the heart of Turin">
+<meta property="og:description" content="A short walk from Piazza San Carlo, in a quiet courtyard in the historic centre. Book direct.">
+<meta property="og:image" content="https://torinosuite.it/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://torinosuite.it/img/og.jpg">
+<meta name="theme-color" content="#54443d">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[
+{"@type":"LodgingBusiness","@id":"https://torinosuite.it/#torino-suite","url":"https://torinosuite.it/en","telephone":"+393482928606","name":"Torino Suite","description":"Five renovated apartments in a historic building in Turin, 200 metres from Piazza San Carlo. Self check-in, quiet courtyard, direct booking.","image":"https://torinosuite.it/img/esterni-01-l.jpg","email":"torinosuite@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Via Carlo Alberto 31","addressLocality":"Torino","addressRegion":"TO","addressCountry":"IT"},"checkinTime":"15:00","checkoutTime":"10:30","petsAllowed":false,"smokingAllowed":false,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Free WiFi","value":true},{"@type":"LocationFeatureSpecification","name":"Air conditioning","value":true},{"@type":"LocationFeatureSpecification","name":"Equipped kitchen","value":true},{"@type":"LocationFeatureSpecification","name":"Lift","value":true}],"availableLanguage":["it","en"],"sameAs":["https://www.instagram.com/torinosuite/"]},
+{"@type":"LodgingBusiness","@id":"https://torinosuite.it/#casa-borgone","url":"https://torinosuite.it/en","telephone":"+393482928606","name":"Casa Borgone","description":"Renovated apartment in a residential area of Turin, separate from the Via Carlo Alberto building.","image":"https://torinosuite.it/img/borgone-01-l.jpg","email":"torinosuite@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Via Borgone 63","addressLocality":"Torino","addressRegion":"TO","addressCountry":"IT"}}
+]}</script>
+<link rel="icon" type="image/png" href="img/mark-brown.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Torino Suite — home">
+      <img src="img/mark-sand.png" alt="" width="52" height="44">
+      <span>Torino<small>Suite</small></span>
+    </a>
+    <nav class="main" id="nav">
+      <a href="#alloggi">Alloggi</a>
+      <a href="#torino">Torino</a>
+      <a href="#itinerari">Itinerari</a>
+      <a href="#eventi">Eventi</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+      <button class="lang" id="lang" type="button" aria-label="Lingua / Language"><span data-l="it">IT</span><i></i><span data-l="en">EN</span></button>
+      <a href="#" class="btn btn-fill" data-open-all style="color:var(--brown-d);opacity:1">Prenota</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-slides" id="heroSlides"></div>
+  <div class="hero-dots" id="heroDots"></div>
+  <div class="wrap hero-in">
+    <div class="eyebrow">Via Carlo Alberto 31 · Centro storico di Torino</div>
+    <h1>Come a casa, <em>in pieno centro</em></h1>
+    <p class="sub">Appartamenti rinnovati in un palazzo storico, in un cortile silenzioso a 200 metri da Piazza San Carlo.</p>
+    <form class="bar" id="bar" novalidate>
+      <label><span>Arrivo</span><input type="date" id="dArr" required></label>
+      <label><span>Partenza</span><input type="date" id="dDep" required></label>
+      <label><span>Ospiti</span>
+        <select id="dAd">
+          <option value="1">1 ospite</option><option value="2" selected>2 ospiti</option><option value="3">3 ospiti</option><option value="4">4 ospiti</option>
+        </select></label>
+      <button type="submit">Cerca alloggio</button>
+    </form>
+    <div class="bar-msg" id="barMsg" role="status"></div>
+    <ul class="trust"><li>Check-in autonomo</li><li>Pagamento sicuro online</li><li>Cancellazione gratuita secondo le condizioni</li></ul>
+  </div>
+  <div class="scrollcue"></div>
+</section>
+
+<!-- PROOF -->
+<section class="proof" aria-label="In numeri">
+  <div class="wrap">
+    <div class="it"><b data-count="9.2" data-dec="1">9,2</b><span>su 10 · Booking.com</span></div>
+    <div class="it"><b data-count="418">418</b><span>recensioni di ospiti</span></div>
+    <div class="it"><b data-count="9.8" data-dec="1">9,8</b><span>voto per la posizione</span></div>
+    <div class="it"><b>200 m</b><span>da Piazza San Carlo · Via Carlo Alberto</span></div>
+  </div>
+  <div class="qwrap"><p class="qstrip" id="qstrip" data-notr></p></div>
+</section>
+
+<!-- INTRO -->
+<section class="intro" id="la-casa">
+  <div class="wrap">
+    <div class="ph rv">
+      <img id="introA" alt="Interno di un appartamento Torino Suite" loading="lazy">
+      <div class="b"><img id="introB" alt="Dettaglio dell'arredo" loading="lazy"></div>
+    </div>
+    <div class="rv d1">
+      <div class="eyebrow">La casa</div>
+      <h2>Un indirizzo <em>storico</em>, la comodità di casa</h2>
+      <p class="lead">Torino Suite occupa il primo piano di un elegante palazzo del centro, affacciato su un cortile interno: la città è fuori dalla porta, il silenzio dentro.</p>
+      <p>Cinque appartamenti completamente rinnovati, ciascuno con ingresso indipendente, aria condizionata, cucina attrezzata e dettagli curati. Niente chiavi da ritirare né code alla reception: il check-in è autonomo, con un codice personale che ricevi prima dell'arrivo.</p>
+      <div class="sign">
+        <div><b>5</b>appartamenti in Via Carlo Alberto</div>
+        <div><b>45–60 m²</b>per vivere la città</div>
+        <div><b>700 m</b>dalla stazione Porta Nuova</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALLOGGI -->
+<section class="apts" id="alloggi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Gli alloggi</div><h2>Cinque in centro, <em>uno in un'altra zona</em></h2></div>
+      <p class="lead rv d1" id="aptsNote">Cinque appartamenti sono in Via Carlo Alberto 31, nel centro storico. Casa Borgone è un alloggio separato, in Via Borgone 63, in un'altra zona di Torino. Il pulsante «Prenota» ti porta al calendario con prezzo e disponibilità aggiornati.</p>
+    </div>
+    <div id="aptList"></div>
+  </div>
+</section>
+
+<!-- STRISCIA PALAZZO -->
+<section class="marq" aria-hidden="true"><div class="row" id="marq"></div></section>
+
+<!-- TORINO -->
+<section class="city" id="torino">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">La città</div><h2>Torino <em>comincia</em> dal portone</h2></div>
+      <p class="lead rv d1">Siamo nel quadrilatero più elegante del centro: piazze barocche, caffè storici, musei e circa 18 km di portici si raggiungono a piedi.</p>
+    </div>
+    <div class="cityline" id="cityline"></div>
+  </div>
+</section>
+
+<!-- TORINO OFFRE -->
+<section class="offer" id="offre">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Cosa offre la città</div><h2>Torino <em>offre</em> di più</h2></div>
+      <p class="lead rv d1">Musei di rilievo internazionale, residenze reali, cinema, cucina e montagne a vista: Torino ha più di quanto si veda in un fine settimana. Questa è una guida per scegliere da dove cominciare.</p>
+    </div>
+    <div class="ogrid">
+      <article class="oc rv"><figure><img src="img/torino/museo-egizio.jpg" alt="Statue all'ingresso del Museo Egizio di Torino" loading="lazy"><figcaption>Arte e musei</figcaption></figure>
+        <div class="ob"><h3>Museo Egizio</h3><p>Il Museo Egizio custodisce una delle più grandi collezioni egizie al mondo fuori dall'Egitto. In città ci sono anche Palazzo Madama, la GAM, la Pinacoteca Agnelli e il Museo dell'Automobile.</p><ul><li>Museo Egizio</li><li>Palazzo Madama</li><li>GAM</li><li>Museo dell'Automobile</li></ul></div></article>
+      <article class="oc rv"><figure><img src="img/torino/piazza-castello.jpg" alt="Piazza Castello e Piazzetta Reale a Torino" loading="lazy"><figcaption>Storia</figcaption></figure>
+        <div class="ob"><h3>Residenze reali</h3><p>Le Residenze Sabaude sono patrimonio UNESCO: Palazzo Reale in Piazza Castello, Palazzo Madama, Palazzo Carignano e, appena fuori città, la Reggia di Venaria e la Palazzina di Stupinigi.</p><ul><li>Palazzo Reale</li><li>Reggia di Venaria</li><li>Stupinigi</li><li>Palazzo Carignano</li></ul></div></article>
+      <article class="oc rv"><figure><img src="img/torino/mole.jpg" alt="La Mole Antonelliana al tramonto con le Alpi sullo sfondo" loading="lazy"><figcaption>Cultura</figcaption></figure>
+        <div class="ob"><h3>Cinema e musica</h3><p>Il Museo Nazionale del Cinema è dentro la Mole Antonelliana, con l'ascensore panoramico che sale fino alla cupola. In calendario ci sono il Torino Film Festival, il Jazz Festival, Club to Club e la stagione del Teatro Regio.</p><ul><li>Mole Antonelliana</li><li>Teatro Regio</li><li>Torino Film Festival</li><li>Club to Club</li></ul></div></article>
+      <article class="oc rv"><figure><img src="img/torino/portici.jpg" alt="Portici di Torino con negozi e passanti" loading="lazy"><figcaption>Gusto</figcaption></figure>
+        <div class="ob"><h3>Caffè, cioccolato e vermouth</h3><p>Si comincia con un bicerin in un caffè storico, si cammina sotto i portici e si finisce con un aperitivo. Torino è la città del cioccolato gianduja e del vermouth, con il grande mercato di Porta Palazzo.</p><ul><li>Bicerin</li><li>Gianduiotto</li><li>Vermouth</li><li>Porta Palazzo</li></ul></div></article>
+      <article class="oc rv"><figure><img src="img/torino/valentino.jpg" alt="Cortile del Castello del Valentino" loading="lazy"><figcaption>Natura</figcaption></figure>
+        <div class="ob"><h3>Parchi e collina</h3><p>Il Parco del Valentino segue il Po, con il castello e il Borgo Medievale. Sulla collina, la basilica di Superga offre una vista ampia sulla città e sull'arco alpino.</p><ul><li>Parco del Valentino</li><li>Borgo Medievale</li><li>Superga</li><li>Lungo Po</li></ul></div></article>
+      <article class="oc rv"><figure><img src="img/torino/monviso.jpg" alt="Il Monviso visto da vicino" loading="lazy"><figcaption>Fuori città</figcaption></figure>
+        <div class="ob"><h3>Alpi e dintorni</h3><p>Nelle giornate limpide le Alpi si vedono dalla città, con il Monviso all'orizzonte. In giornata si raggiungono le Langhe, patrimonio UNESCO, la Sacra di San Michele e le stazioni sciistiche della Via Lattea.</p><ul><li>Monviso</li><li>Langhe</li><li>Sacra di San Michele</li><li>Via Lattea</li></ul></div></article>
+    </div>
+    <p class="onote">Fotografie: Wikimedia Commons, con autore e licenza nei crediti fotografici in fondo alla pagina.</p>
+  </div>
+</section>
+
+<!-- EVENTI -->
+<!-- TORINO IN FOTO -->
+<section class="pics" id="foto">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Torino in foto</div><h2>Una città <em>da guardare</em></h2></div>
+      <p class="lead rv d1">Piazze, residenze reali, colline e mercati: alcune immagini di ciò che si può vedere a Torino e nei dintorni. Tocca una foto per ingrandirla.</p>
+    </div>
+    <div class="mas" id="mas"></div>
+    <div class="cta-row rv"><a class="btn btn-dark" href="#" data-open-all>Verifica disponibilità</a></div>
+    <p class="onote">Fotografie: Wikimedia Commons. Autore e licenza di ogni immagine sono nei <a href="#" role="button" data-doc="crediti">crediti fotografici</a>.</p>
+  </div>
+</section>
+
+<!-- FASCIA PANORAMA -->
+<section class="band" aria-label="Torino">
+  <div class="band-bg" style="background-image:url(img/torino/mole.jpg)"></div>
+  <div class="wrap"><blockquote class="rv">Una città da <em>scoprire a piedi</em>, con un portone da cui partire.</blockquote></div>
+</section>
+
+<!-- ITINERARI -->
+<section class="itin" id="itinerari">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Itinerari</div><h2>Torino in <em>uno, due, tre giorni</em></h2></div>
+      <p class="lead rv d1">Da Via Carlo Alberto quasi tutto si raggiunge a piedi. Scegli quanto ti fermi e vedi come impiegare il tempo, giorno per giorno.</p>
+    </div>
+    <div class="tabs rv" id="itTabs" role="tablist" aria-label="Durata del soggiorno">
+      <button role="tab" data-n="1" class="on">1 giorno</button>
+      <button role="tab" data-n="2">2 giorni</button>
+      <button role="tab" data-n="3">3 giorni</button>
+    </div>
+    <div class="days" id="itDays">
+      <article class="day rv" data-d="1"><h3>Giorno 1 · Il cuore storico</h3>
+        <ol>
+          <li><b>Mattina</b><span>Museo Egizio, a 300 metri da casa. Poi Piazza Castello, con Palazzo Reale e Palazzo Madama.</span></li>
+          <li><b>Pomeriggio</b><span>Pranzo piemontese sotto i portici di Via Po. Poi la salita alla Mole Antonelliana con l'ascensore panoramico e il Museo del Cinema.</span></li>
+          <li><b>Sera</b><span>Un bicerin o un vermouth in Piazza San Carlo, poi cena nel Quadrilatero Romano.</span></li>
+        </ol></article>
+      <article class="day rv d1" data-d="2"><h3>Giorno 2 · Mercati, parchi e San Salvario</h3>
+        <ol>
+          <li><b>Mattina</b><span>Il mercato di Porta Palazzo, uno dei più grandi mercati all'aperto d'Europa, e una passeggiata nel Quadrilatero Romano.</span></li>
+          <li><b>Pomeriggio</b><span>Il Parco del Valentino sul Po: il castello, l'Orto Botanico e il Borgo Medievale.</span></li>
+          <li><b>Sera</b><span>Aperitivo e cena nel quartiere di San Salvario, tra locali e ristoranti di ogni genere.</span></li>
+        </ol></article>
+      <article class="day rv d2" data-d="3"><h3>Giorno 3 · Fuori porta</h3>
+        <ol>
+          <li><b>Mattina</b><span>Scegli una gita: la Reggia di Venaria, la basilica di Superga sulla collina con la vista sulle Alpi, oppure le Langhe in auto.</span></li>
+          <li><b>Pomeriggio</b><span>Rientro in città e tempo libero: il Museo dell'Automobile, la GAM o un giro tra le botteghe del centro.</span></li>
+          <li><b>Sera</b><span>Cena di saluto con i piatti della tradizione piemontese.</span></li>
+        </ol></article>
+    </div>
+    <div class="eat rv">
+      <h4>Da assaggiare</h4>
+      <ul><li>Agnolotti del plin</li><li>Vitello tonnato</li><li>Bagna cauda</li><li>Bicerin</li><li>Gianduiotto</li><li>Vermouth</li></ul>
+      <p>Caffè storici nel centro: il Caffè Torino e il Caffè San Carlo in Piazza San Carlo, il Mulassano e il Baratti &amp; Milano in zona Piazza Castello, il Bicerin in Piazza della Consolata.</p>
+    </div>
+    <div class="cta-row rv"><a class="btn btn-dark" href="#" data-open-all>Verifica disponibilità</a></div>
+    <p class="onote">Orari e giorni di apertura di musei e attrazioni cambiano durante l'anno: controlla sui siti ufficiali prima di andare. Per qualsiasi dubbio, scrivici: ti consigliamo volentieri.</p>
+  </div>
+</section>
+
+<!-- STAGIONI -->
+<section class="seas" id="stagioni">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Stagioni</div><h2>Torino <em>in ogni stagione</em></h2></div>
+      <p class="lead rv d1">Quando venire? Quasi sempre: ogni periodo dell'anno ha il suo motivo per fermarsi qualche notte.</p>
+    </div>
+    <div class="sgrid">
+      <article class="sx rv" data-m="3,4,5"><small>Marzo – maggio</small><h3>Primavera</h3><p>Le giornate si allungano, i parchi fioriscono e il calendario si riempie di incontri: Biennale Democrazia (negli anni dispari), il Torino Jazz Festival e il Salone del Libro.</p><ul><li>Biennale Democrazia</li><li>Jazz Festival</li><li>Salone del Libro</li><li>Parco del Valentino</li></ul></article>
+      <article class="sx rv d1" data-m="6,7,8"><small>Giugno – agosto</small><h3>Estate</h3><p>Si vive all'aperto: la festa di San Giovanni il 24 giugno, le serate lungo il Po e le gite in montagna o nelle Langhe per sfuggire al caldo.</p><ul><li>San Giovanni</li><li>Lungo Po</li><li>Montagna</li><li>Langhe</li></ul></article>
+      <article class="sx rv d2" data-m="9,10,11"><small>Settembre – novembre</small><h3>Autunno</h3><p>È il momento di arte, cinema, musica e sport: Artissima, Club to Club, le ATP Finals e il Torino Film Festival. Nelle Langhe è stagione di vendemmia e di tartufi.</p><ul><li>Artissima</li><li>Club to Club</li><li>ATP Finals</li><li>Torino Film Festival</li></ul></article>
+      <article class="sx rv d3" data-m="12,1,2"><small>Dicembre – febbraio</small><h3>Inverno</h3><p>Luci d'Artista accende le strade, i caffè storici si riempiono di cioccolata calda e di bicerin, e le montagne della Via Lattea offrono una giornata sulla neve.</p><ul><li>Luci d'Artista</li><li>Bicerin</li><li>Cioccolata</li><li>Via Lattea</li></ul></article>
+    </div>
+    <div class="cta-row rv"><a class="btn btn-dark" href="#" data-open-all>Verifica disponibilità</a></div>
+  </div>
+</section>
+
+<section class="events" id="eventi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Eventi</div><h2>Torino <em>non si ferma mai</em></h2></div>
+      <p class="lead rv d1">Arte, cinema, sport, musica e libri: ogni mese la città ha un buon motivo per fermarsi qualche notte in più. Scegli l'evento, poi le date.</p>
+    </div>
+    <ul class="evlist" id="evList" data-notr></ul>
+    <p class="evnote" id="evNote" data-notr></p>
+    <button class="btn btn-dark" data-open-all>Verifica disponibilità</button>
+  </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="serv" id="servizi">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Servizi</div><h2>Tutto ciò che serve, <em>niente di più</em></h2></div>
+    <div class="grid" id="servGrid"></div>
+  </div>
+</section>
+
+<!-- POSIZIONE -->
+<section class="seas pks" id="parcheggio">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Parcheggio</div><h2>Arrivare in auto, <em>senza sorprese</em></h2></div>
+      <p class="lead rv d1">Il centro di Torino ha una zona a traffico limitato e molte strade a pagamento. Ecco le regole principali. Se arrivi in auto, scrivici prima: ti aiutiamo a scegliere dove lasciarla.</p>
+    </div>
+    <div class="sgrid">
+      <article class="pk rv"><small>Strisce blu</small><h3>Sosta in strada</h3><ul class="pkr"><li><b>Lun–ven, 7.30–10.30</b><span>Divieto di sosta senza permesso. L'auto va spostata entro le 7.30.</span></li><li><b>Lun–ven, 10.30–19.30</b><span>A pagamento: 2,80 € all'ora.</span></li><li><b>Sabato, 8.00–19.30</b><span>A pagamento: 2,80 € all'ora.</span></li><li><b>Sera, notte e domenica</b><span>Fuori dall'orario a pagamento.</span></li></ul><p>Si paga al parcometro o con l'app GTT SostAPP.</p></article>
+      <article class="pk rv d1"><small>ZTL</small><h3>Zona a traffico limitato</h3><ul class="pkr"><li><b>Lun–ven, 7.30–10.30</b><span>Circolazione vietata senza permesso. Le telecamere ai varchi controllano le targhe.</span></li><li><b>Per andare in un garage</b><span>In quella fascia si compila un modulo di esenzione presso il garage scelto.</span></li><li><b>Sabato e domenica</b><span>Nessun divieto di circolazione.</span></li></ul></article>
+      <article class="pk rv d2"><small>Parcheggi pubblici</small><h3>Garage in centro</h3><p>I parcheggi pubblici più vicini costano circa 2,20–2,50 € all'ora. Tra questi ci sono Giolitti, Valdo Fusi e San Carlo.</p><p class="pkl"><a href="https://acimmagine.it/parcheggi-aci-torino/giolitti.html" target="_blank" rel="noopener">Giolitti (ACI)</a><a href="https://www.gtt.to.it/cms/parcheggi/31-barriera/rotazione/436-valdofusi" target="_blank" rel="noopener">Valdo Fusi (GTT)</a></p></article>
+      <article class="pk rv d3"><small>Garage privato</small><h3>A 200 metri da casa</h3><p>In Via Piero Gobetti 9, a 200 metri dagli appartamenti di Via Carlo Alberto, c'è un garage privato con personale in loco 24 ore su 24. Costa 41 o 48 € ogni 24 ore, secondo le dimensioni dell'auto. Se ti interessa, possiamo prenotarlo noi.</p></article>
+    </div>
+    <p class="onote rv">Orari e tariffe possono cambiare: fanno fede il Comune di Torino e GTT. Indicazioni di ottobre 2026.</p>
+    <div class="cta-row rv"><a class="btn btn-fill" href="#contatti">Scrivici prima di partire</a></div>
+  </div>
+</section>
+<section class="loc" id="posizione">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Posizione</div>
+      <h2>Il centro, <em>a piedi</em></h2>
+      <p class="lead">Via Carlo Alberto 31, tra Piazza Carlo Alberto e Piazza San Carlo. Distanze indicative dall'ingresso e valide solo per i cinque appartamenti di Via Carlo Alberto: Casa Borgone (Via Borgone 63) si trova in un'altra zona, come indicato nella sua scheda.</p>
+      <ul class="dist" id="dist"></ul>
+    </div>
+    <div class="map rv d1" id="map">
+      <div class="ask"><img src="img/mark-sand.png" alt=""><p>Mappa di Via Carlo Alberto 31. Viene caricata solo se lo desideri, per rispettare la tua privacy.</p>
+      <button class="btn btn-fill" id="mapBtn">Mostra la mappa</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECENSIONI -->
+<section class="rev" id="recensioni">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="rv"><div class="eyebrow">Recensioni</div><h2>Parlano <em>gli ospiti</em></h2></div>
+    </div>
+    <div class="score rv">
+      <div class="big"><b>9,2</b><span>/10<small>Eccellente · 418 recensioni su Booking.com</small></span></div>
+      <div class="bars" id="bars"></div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="rtrack" id="rtrack"></div>
+    <div class="rnav">
+      <button id="rPrev" aria-label="Precedenti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button id="rNext" aria-label="Successive"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg></button>
+      <small>Recensioni di ospiti verificati, riportate come pubblicate su Booking.com (lettura del 17/10/2026).</small>
+    </div>
+  </div>
+</section>
+
+<!-- PRENOTA DIRETTO -->
+<section class="direct" id="prenota">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Prenotazione diretta</div>
+      <h2>Prenota con noi, <em>senza intermediari</em></h2>
+      <ul class="ben">
+        <li><svg viewBox="0 0 24 24"><path d="M3 12l5 5L21 6"/></svg><div><b>Tariffa diretta</b><span>Prezzo e disponibilità in tempo reale, direttamente dal nostro calendario.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg><div><b>Pagamento sicuro online</b><span>Paghi con carta al momento della prenotazione; la tassa di soggiorno è indicata a parte.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></svg><div><b>Check-in autonomo</b><span>Nessuna chiave: entri con un codice personale ricevuto prima dell'arrivo.</span></div></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 01-11.5 7.2L4 20l1-4.5A8 8 0 1121 12z"/></svg><div><b>Assistenza diretta</b><span>Una persona reale risponde alle tue domande, prima e durante il soggiorno.</span></div></li>
+      </ul>
+      <button class="btn btn-fill" data-open-all>Verifica disponibilità</button>
+    </div>
+    <div class="pic rv"><img id="directImg" alt="Soggiorno di un appartamento Torino Suite" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- SOGGIORNI LUNGHI -->
+<section class="long" id="soggiorni">
+  <div class="wrap">
+    <div class="rv"><div class="eyebrow">Soggiorni lunghi e gruppi</div><h2>Hai <em>esigenze particolari</em>?</h2>
+      <p class="lead">Per più di una settimana, per più alloggi insieme o per richieste speciali, scrivici: ti rispondiamo con una proposta su misura.</p></div>
+    <div class="rv d1 lbtns"><a class="btn btn-fill" href="#contatti" data-ask="long">Richiedi una proposta</a><a class="btn btn-line" id="waLink" hidden target="_blank" rel="noopener">Scrivici su WhatsApp</a></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="rv">Domande <em>frequenti</em></h2>
+    <div class="rv d1" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CONTATTI -->
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Contatti</div>
+      <h2>Scrivici, <em>rispondiamo noi</em></h2>
+      <p class="lead">Domande sugli alloggi, richieste particolari, gruppi o soggiorni lunghi: lascia un messaggio e ti rispondiamo il prima possibile.</p>
+      <div class="info">
+        <div><small>Email</small><a href="mailto:torinosuite@gmail.com">torinosuite@gmail.com</a></div>
+        <div><small>Dove siamo</small><span><a class="addr" data-addr="Via Carlo Alberto 31, 10123 Torino, Italia" href="https://www.google.com/maps/search/?api=1&query=Via+Carlo+Alberto+31,+10123+Torino,+Italia" target="_blank" rel="noopener">Via Carlo Alberto 31, Torino (cinque appartamenti)</a><br><a class="addr" data-addr="Via Borgone 63, 10139 Torino, Italia" href="https://www.google.com/maps/search/?api=1&query=Via+Borgone+63,+10139+Torino,+Italia" target="_blank" rel="noopener">Via Borgone 63, Torino (Casa Borgone)</a></span></div>
+        <div><small>Check-in · Check-out</small><span>15:00–21:00 · entro le 10:30</span></div>
+      </div>
+    </div>
+    <form class="cf rv d1" id="cf" novalidate>
+      <label class="f"><span>Nome e cognome *</span><input name="nome" required placeholder=" " autocomplete="name"></label>
+      <label class="f"><span>Email *</span><input name="email" type="email" required placeholder=" " autocomplete="email"></label>
+      <label class="f"><span>Telefono</span><input name="tel" type="tel" autocomplete="tel"></label>
+      <label class="f"><span>Alloggio di interesse</span>
+        <select name="alloggio" id="cfApt"><option value="">Nessuna preferenza</option></select></label>
+      <label class="f"><span>Arrivo</span><input name="arrivo" type="date"></label>
+      <label class="f"><span>Partenza</span><input name="partenza" type="date"></label>
+      <label class="f full"><span>Messaggio *</span><textarea name="messaggio" required placeholder=" "></textarea></label>
+      <input class="hp" name="sito" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="chk"><input type="checkbox" name="privacy" required><span>Ho letto l'<a href="#" role="button" data-doc="privacy">informativa privacy</a> e acconsento al trattamento dei dati per ricevere risposta.</span></label>
+      <button class="btn btn-dark" type="submit">Invia messaggio</button>
+      <div class="ok" id="cfOk" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><img src="img/logo-sand.png" alt="Torino Suite"><p>Appartamenti per brevi soggiorni a Torino: cinque nel centro storico (Via Carlo Alberto 31) e Casa Borgone in Via Borgone 63.</p></div>
+    <div><h5>Esplora</h5><a href="#alloggi">Alloggi</a><a href="#torino">Torino</a><a href="#foto">Foto</a><a href="#itinerari">Itinerari</a><a href="#eventi">Eventi</a><a href="#recensioni">Recensioni</a><a href="#faq">Domande frequenti</a><a href="#contatti">Contatti</a></div>
+    <div><h5>Informazioni</h5><a href="#" role="button" data-doc="condizioni">Condizioni di soggiorno</a><a href="#" role="button" data-doc="privacy">Informativa privacy</a><a href="#" role="button" data-doc="crediti">Crediti fotografici</a></div>
+    <div class="legal"><span>© <span id="yr"></span> Torino Suite Srl · Corso Rosselli 1, 10128 Torino · P.IVA 11270060012</span><span data-notr>CIN IT001272B4QLP6MUE5 · CIR 001272-CIM-00054</span><span>Valutazioni e recensioni: Booking.com, lettura del 17/10/2026</span></div>
+  </div>
+</footer>
+
+<a class="btn btn-fill stickycta" id="sticky" href="#" data-open-all>Prenota</a>
+
+<!-- modal prenotazione / documenti -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="mbox">
+    <header><b id="mTitle">Prenota</b><a id="mExt" href="#" target="_blank" rel="noopener">Apri in una nuova scheda ↗</a><button class="x" id="mClose" aria-label="Chiudi">×</button></header>
+    <iframe id="mFrame" title="Prenotazione" allow="payment *" loading="lazy" hidden></iframe>
+    <div class="doc" id="mDoc" hidden></div>
+  </div>
+</div>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true">
+  <div class="top"><b id="lbT"></b><span id="lbC" style="font-size:.8rem;letter-spacing:.14em"></span><button class="x" id="lbX" aria-label="Chiudi">×</button></div>
+  <div class="stage">
+    <button class="arr l" id="lbL" aria-label="Precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <img id="lbI" alt="">
+    <button class="arr r" id="lbR" aria-label="Successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="thumbs" id="lbTh"></div>
+</div>
+
+<a class="wa" id="wa" hidden target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.700 6.700 0 01-3.300-2.900c-.2-.4.3-.4.700-1.300.1-.2 0-.3 0-.4l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.200 5.100 5.100 0 001.100 2.700 11.700 11.700 0 004.500 4c1.700.7 2.300.8 3.200.7a2.700 2.700 0 001.800-1.300 2.200 2.200 0 00.2-1.300c-.1-.1-.2-.2-.5-.3z"/></svg></a>
+<div class="progress" id="prog" aria-hidden="true"></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

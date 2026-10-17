@@ -1,9 +1,7 @@
 /* Lingua IT/EN: traduce in tempo reale i testi del sito. Dizionario in fondo. */
 let LANG = 'it';
-(() => { let q = ''; try { q = new URLSearchParams(location.search).get('lang') || ''; } catch (_) {}
-  let s = ''; try { s = localStorage.getItem('ts-lang') || ''; } catch (_) {}
-  const nav = (navigator.language || 'it').toLowerCase();
-  LANG = (q === 'en' || q === 'it') ? q : (s === 'en' || s === 'it') ? s : (nav.startsWith('it') ? 'it' : 'en'); })();
+/* La lingua dipende dall'indirizzo: / = italiano, /en = inglese (attributo lang di <html>). Niente rilevamento dal browser: cosi' anche Google vede ogni pagina nella sua lingua. */
+LANG = (document.documentElement.lang || 'it').toLowerCase().startsWith('en') ? 'en' : 'it';
 const MON = {gennaio:'January',febbraio:'February',marzo:'March',aprile:'April',maggio:'May',giugno:'June',luglio:'July',agosto:'August',settembre:'September',ottobre:'October',novembre:'November',dicembre:'December'};
 const RULES = [
   [/^(.+), foto (\d+)$/, (m,a,b) => `${a}, photo ${b}`],
@@ -461,10 +459,8 @@ function applyLang(root) {
   }
 }
 function setLang(l) {
-  LANG = l; try { localStorage.setItem('ts-lang', l); } catch (_) {}
-  applyLang(); if (typeof renderEvents === 'function') renderEvents(); if (typeof refreshButtons === 'function') refreshButtons();
-  if (typeof renderQuote === 'function') renderQuote();
-  const m = document.getElementById('barMsg'); if (m) m.textContent = '';
+  /* cambio lingua = cambio pagina (/ <-> /en), mantenendo la sezione aperta */
+  const to = new URL(l === 'en' ? 'en' : './', location.href); to.hash = location.hash; location.href = to.href;
 }
 function i18nInit() {
   const b = document.getElementById('lang'); if (b) b.onclick = () => setLang(LANG === 'en' ? 'it' : 'en');

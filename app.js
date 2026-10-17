@@ -481,7 +481,7 @@ $('#evList').addEventListener('click', ev => {
   addEventListener('scroll', f, {passive:true}); f();
   if (CONFIG.analytics) { const [u, id] = CONFIG.analytics.split('|'); if (/^https:\/\//.test(u)) { const s = document.createElement('script'); s.defer = true; s.src = u; if (id) s.dataset.websiteId = id; document.head.appendChild(s); } }
   const ld = document.createElement('script'); ld.type = 'application/ld+json';
-  ld.textContent = JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:FAQ.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))});
+  ld.textContent = JSON.stringify({'@context':'https://schema.org','@type':'FAQPage',mainEntity:FAQ.map(([q,a])=>({'@type':'Question',name:tt(q),acceptedAnswer:{'@type':'Answer',text:tt(a)}}))});
   document.head.appendChild(ld);
 })();
 
