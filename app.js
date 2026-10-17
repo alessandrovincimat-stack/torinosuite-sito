@@ -256,6 +256,19 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
       $('.next', el).onclick = () => { if (track.scrollLeft + W() >= track.scrollWidth - 4) track.scrollTo({left:0,behavior:'smooth'}); else track.scrollBy({left:W(), behavior:'smooth'}); };
       $$('figure', el).forEach(f => f.onclick = () => openLb(r.name, ids.map(i=>src(r.slug,i,'l')), ids.map(i=>src(r.slug,i,'m')), ids.indexOf(show[+f.dataset.i])));
       $('.all', el).onclick = () => openLb(r.name, ids.map(i=>src(r.slug,i,'l')), ids.map(i=>src(r.slug,i,'m')), 0);
+      /* scorrimento automatico: si ferma al passaggio/tocco, fuori schermo o con movimento ridotto */
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && show.length > 1) {
+        let vis = false, hold = 0;
+        const gal = $('.gal', el), pause = ms => { hold = Date.now() + ms; };
+        new IntersectionObserver(es => { vis = es[0].isIntersecting; }, {threshold: .4}).observe(gal);
+        ['mouseenter','focusin'].forEach(ev => gal.addEventListener(ev, () => pause(1e9)));
+        ['mouseleave','focusout'].forEach(ev => gal.addEventListener(ev, () => pause(4000)));
+        ['touchstart','pointerdown','wheel','keydown'].forEach(ev => gal.addEventListener(ev, () => pause(10000), {passive:true}));
+        setTimeout(() => setInterval(() => {
+          if (!vis || document.hidden || Date.now() < hold || document.querySelector('.lb.on,.lightbox.on')) return;
+          if (track.scrollLeft + W() >= track.scrollWidth - 4) track.scrollTo({left:0, behavior:'smooth'}); else track.scrollBy({left:W(), behavior:'smooth'});
+        }, 4500), 1200 * k);
+      }
     }
   });
   refreshButtons();
