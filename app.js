@@ -284,7 +284,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
   set('#introA', INTRO.a); set('#introB', INTRO.b,'m'); set('#directImg', INTRO.direct);
   const row = $('#marq');
   const html = MARQ.map(([a,b],i)=>`<img src="${src(a,b,'m')}" alt="" width="630" height="420" loading="eager">`).join('');
-  row.innerHTML = html + html;
+  row.innerHTML = html + html; (function(){ const box=row.parentElement; if(matchMedia('(prefers-reduced-motion: reduce)').matches) return; let paused=false,pos=0,last=0; const hold=()=>{paused=true;}; const go=()=>{paused=false;pos=box.scrollLeft;}; ['pointerdown','touchstart','mouseenter'].forEach(e=>box.addEventListener(e,hold,{passive:true})); ['pointerup','touchend','touchcancel','mouseleave'].forEach(e=>box.addEventListener(e,()=>setTimeout(go,1500),{passive:true})); const step=t=>{ if(!last) last=t; const dt=t-last; last=t; if(!paused){ pos+=dt*0.04; const half=row.scrollWidth/2; if(pos>=half) pos-=half; box.scrollLeft=pos; } requestAnimationFrame(step); }; requestAnimationFrame(step); })();
 })();
 
 /* ---------- Torino: pannelli interattivi ---------- */
