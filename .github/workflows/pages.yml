@@ -21,7 +21,7 @@ jobs:
       - name: Prepara il sito
         run: |
           mkdir -p _site
-          cp index.html app.js i18n.js style.css events.json CNAME robots.txt sitemap.xml _site/
+          cp index.html en.html app.js i18n.js style.css events.json CNAME robots.txt sitemap.xml _site/
           for z in img-*.zip; do unzip -q -o "$z" -d _site; done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
