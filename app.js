@@ -136,6 +136,12 @@ const DOCS = {
 };
 
 /* ---------- utilità ---------- */
+const ADDR_CA = 'Via Carlo Alberto 31, 10123 Torino, Italia', ADDR_BORGONE = 'Via Borgone 63, 10139 Torino, Italia';
+function mapHref(addr) {
+  const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  return ios ? 'https://maps.apple.com/?q=' + encodeURIComponent(addr) : 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(addr);
+}
+document.querySelectorAll('a[data-addr]').forEach(el => { el.href = mapHref(el.dataset.addr); });
 const $ = (s, r=document) => r.querySelector(s);
 const $$ = (s, r=document) => [...r.querySelectorAll(s)];
 const nn = i => String(i).padStart(2,'0');
@@ -236,7 +242,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     }
     el.innerHTML = `${gal}<div>
       <span class="tag">${r.tag}</span><h3>${r.name}</h3><div class="sz">${r.sz}</div>${FIT[r.slug]?`<div class="fit">${FIT[r.slug]}</div>`:''}
-      <div class="where${r.slug==='borgone'?' far':''}"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>${r.slug==='borgone'?'Via Borgone 63 · fuori dal palazzo di Via Carlo Alberto, in un\'altra zona di Torino':'Via Carlo Alberto 31 · centro storico, stesso palazzo'}</div>
+      <a class="where addr${r.slug==='borgone'?' far':''}" target="_blank" rel="noopener" data-addr="${r.slug==='borgone'?ADDR_BORGONE:ADDR_CA}" href="${mapHref(r.slug==='borgone'?ADDR_BORGONE:ADDR_CA)}"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>${r.slug==='borgone'?'Via Borgone 63 · fuori dal palazzo di Via Carlo Alberto, in un\'altra zona di Torino':'Via Carlo Alberto 31 · centro storico, stesso palazzo'}</a>
       <p>${r.desc}</p>
       <div class="chips">${r.chips.map(c=>`<span>${c}</span>`).join('')}</div>
       <div class="cta"><button class="btn btn-dark" data-book="${r.id}"><span>Verifica date e prezzi</span></button></div></div>`;
