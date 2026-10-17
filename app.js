@@ -116,10 +116,23 @@ const DOCS = {
  <h4>Cancellazione</h4><p>Via Carlo Alberto: gratuita fino a 5 giorni prima dell'arrivo. Casa Borgone: gratuita fino a 14 giorni prima. Oltre tali termini è addebitato l'intero importo.</p>
  <h4>Danni</h4><p>L'ospite risponde dei danni causati; non è richiesta cauzione.</p>`],
  privacy:['Informativa privacy',`<p><b>Titolare del trattamento:</b> Torino Suite Srl, Corso Rosselli 1, 10128 Torino, P.IVA 11270060012 — torinosuite@gmail.com.</p>
- <h4>Modulo di contatto</h4><p>Usiamo nome, email, telefono (facoltativo) e il contenuto del messaggio solo per risponderti. Base giuridica: tua richiesta (art. 6.1.b GDPR) e consenso. Conserviamo i dati per il tempo necessario a gestire la richiesta e, se segue una prenotazione, per gli obblighi di legge.</p>
- <h4>Prenotazioni</h4><p>La prenotazione avviene sul sistema Smoobu, nostro fornitore, che tratta i dati per nostro conto; i pagamenti sono gestiti da Stripe. Trovi le rispettive informative nelle pagine di prenotazione.</p>
- <h4>Mappa</h4><p>La mappa di Google viene caricata solo se premi «Mostra la mappa»; fino ad allora nessun dato è inviato a Google. Il sito non usa cookie di profilazione.</p>
- <h4>I tuoi diritti</h4><p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo a torinosuite@gmail.com, e proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>`]
+ <p>Il modulo non invia i dati a un nostro server: apre il tuo programma di posta con il messaggio precompilato, e i dati ci arrivano solo se lo invii tu. Usiamo nome, email, telefono (facoltativo), alloggio, date e testo del messaggio solo per risponderti. Base giuridica: tua richiesta (art. 6.1.b GDPR). Conserviamo i dati per il tempo necessario a gestire la richiesta e, se segue una prenotazione, per gli obblighi di legge.</p>
+ <h4>WhatsApp</h4>
+ <p>Se ci scrivi con il pulsante WhatsApp, il messaggio è gestito da WhatsApp (Meta) secondo la sua informativa; usiamo numero e testo solo per risponderti.</p>
+ <h4>Prenotazioni</h4>
+ <p>La prenotazione avviene sul sistema Smoobu, nostro fornitore, che tratta i dati per nostro conto. Il pagamento con carta è gestito da Stripe: i dati di pagamento sono trattati da Stripe e non sono conservati da noi. Nome, contatti, date e pagamento servono a concludere ed eseguire il contratto e agli obblighi fiscali e contabili. Nella pagina di prenotazione trovi anche le condizioni e la nostra informativa.</p>
+ <h4>Obblighi di legge sul soggiorno</h4>
+ <p>Per legge dobbiamo registrare i dati degli ospiti e comunicarli alla Questura (Alloggiati Web), trasmettere i dati statistici (ISTAT) e gestire l'imposta di soggiorno del Comune di Torino. Al check-in riceverai le informazioni dedicate.</p>
+ <h4>Dati tecnici e hosting</h4>
+ <p>Il sito è ospitato su GitHub Pages (GitHub Inc., USA), che può registrare l'indirizzo IP nei log del server per sicurezza e funzionamento. Il sito non usa cookie di profilazione né strumenti di statistica.</p>
+ <h4>Mappa</h4>
+ <p>La mappa di Google viene caricata solo se premi «Mostra la mappa»; fino ad allora nessun dato è inviato a Google. La pagina di prenotazione Smoobu si apre in una finestra incorporata e può usare strumenti tecnici e di misurazione del fornitore.</p>
+ <h4>Destinatari e trasferimenti</h4>
+ <p>I dati non sono diffusi né venduti. Possono essere trattati da fornitori che operano per nostro conto (Smoobu, Stripe, posta Google, GitHub), da consulenti fiscali e contabili e, nei casi previsti, da Questura, ISTAT e Comune. Alcuni fornitori possono trattare dati fuori dallo Spazio economico europeo con garanzie adeguate, come le clausole contrattuali standard.</p>
+ <h4>I tuoi diritti</h4>
+ <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo a torinosuite@gmail.com, e proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
+ <p>Il conferimento dei dati del modulo è facoltativo, ma senza di essi non possiamo risponderti.</p>
+ <p>Ultimo aggiornamento: 17 ottobre 2026.</p>`]
 };
 
 /* ---------- utilità ---------- */
