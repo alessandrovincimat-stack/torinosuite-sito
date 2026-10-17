@@ -151,7 +151,7 @@ header.top.solid .burger{color:var(--brown-d)}
 .marq{padding:0;background:var(--brown-d);overflow:hidden}
 .marq .row{display:flex;gap:14px;width:max-content;animation:mq 70s linear infinite;padding:14px 0}
 .marq:hover .row{animation-play-state:paused}
-.marq img{height:clamp(220px,32vw,420px);width:auto;border-radius:3px}
+.marq img{height:clamp(220px,32vw,420px);width:auto;aspect-ratio:3/2;object-fit:cover;background:var(--brown-m);border-radius:3px}
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* services */
