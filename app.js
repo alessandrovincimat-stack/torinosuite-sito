@@ -5,7 +5,7 @@ const CONFIG = {
   contactEmail: 'torinosuite@gmail.com',
   eventsUrl: 'events.json',                             // calendario eventi: lo aggiorna ogni settimana l'attivita' programmata
   whatsapp: '393482928606',                                         // numero con prefisso, senza + (es. '393331234567'); vuoto = pulsante WhatsApp nascosto
-  analytics: ''                                         // es. 'https://cloud.umami.is/script.js|ID-SITO' (statistiche senza cookie); vuoto = nessuna statistica
+  analytics: 'https://cloud.umami.is/script.js|30cace63-5a6f-4181-8faa-3cd551401c72'                                         // es. 'https://cloud.umami.is/script.js|ID-SITO' (statistiche senza cookie); vuoto = nessuna statistica
 };
 
 const FIT = {'carlo-alberto':'Ideale per: coppie, soggiorni di lavoro','carlo-felice':'Ideale per: coppie, fino a 3 ospiti','vittorio':'Ideale per: coppie, chi ama cucinare, soggiorni più lunghi','san-carlo':'Ideale per: famiglie, piccoli gruppi','carignano':'Ideale per: famiglie, piccoli gruppi','borgone':'Ideale per: chi cerca un quartiere residenziale e tranquillo'};
@@ -127,7 +127,7 @@ const DOCS = {
  <h4>Obblighi di legge sul soggiorno</h4>
  <p>Per legge dobbiamo registrare i dati degli ospiti e comunicarli alla Questura (Alloggiati Web), trasmettere i dati statistici (ISTAT) e gestire l'imposta di soggiorno del Comune di Torino. Al check-in riceverai le informazioni dedicate.</p>
  <h4>Dati tecnici e hosting</h4>
- <p>Il sito è ospitato su GitHub Pages (GitHub Inc., USA), che può registrare l'indirizzo IP nei log del server per sicurezza e funzionamento. Il sito non usa cookie di profilazione né strumenti di statistica.</p>
+ <p>Il sito è ospitato su GitHub Pages (GitHub Inc., USA), che può registrare l'indirizzo IP nei log del server per sicurezza e funzionamento. Il sito non usa cookie di profilazione. Per sapere quante persone visitano le pagine usiamo Umami (Umami Software, Inc.), uno strumento di statistica con server nell'Unione Europea che non usa cookie e non conserva dati che permettano di identificarti.</p>
  <h4>Mappa</h4>
  <p>La mappa di Google viene caricata solo se premi «Mostra la mappa»; fino ad allora nessun dato è inviato a Google. La pagina di prenotazione Smoobu si apre in una finestra incorporata e può usare strumenti tecnici e di misurazione del fornitore.</p>
  <h4>Destinatari e trasferimenti</h4>
