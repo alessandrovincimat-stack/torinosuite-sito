@@ -119,7 +119,7 @@ const DOCS = {
  <h4>Cancellazione</h4><p>Via Carlo Alberto: gratuita fino a 5 giorni prima dell'arrivo. Casa Borgone: gratuita fino a 14 giorni prima. Oltre tali termini è addebitato l'intero importo.</p>
  <h4>Danni</h4><p>L'ospite risponde dei danni causati; non è richiesta cauzione.</p>`],
  privacy:['Informativa privacy',`<p><b>Titolare del trattamento:</b> Torino Suite Srl, Corso Rosselli 1, 10128 Torino, P.IVA 11270060012 — torinosuite@gmail.com.</p>
- <p>Il modulo non invia i dati a un nostro server: apre il tuo programma di posta con il messaggio precompilato, e i dati ci arrivano solo se lo invii tu. Usiamo nome, email, telefono (facoltativo), alloggio, date e testo del messaggio solo per risponderti. Base giuridica: tua richiesta (art. 6.1.b GDPR). Conserviamo i dati per il tempo necessario a gestire la richiesta e, se segue una prenotazione, per gli obblighi di legge.</p>
+ <p>Quando compili il modulo di contatto, i dati che inserisci (nome, email, telefono facoltativo, alloggio, date e testo del messaggio) vengono inviati dal sito al nostro server e recapitati per email alla casella torinosuite@gmail.com, gestita con la posta di Google. Li usiamo solo per risponderti. Base giuridica: tua richiesta (art. 6.1.b GDPR). Il server non conserva il messaggio; per limitare gli abusi tiene per breve tempo, solo in memoria, il numero di invii per indirizzo IP. Conserviamo l'email ricevuta per il tempo necessario a gestire la richiesta e, se segue una prenotazione, per gli obblighi di legge.</p>
  <h4>WhatsApp</h4>
  <p>Se ci scrivi con il pulsante WhatsApp, il messaggio è gestito da WhatsApp (Meta) secondo la sua informativa; usiamo numero e testo solo per risponderti.</p>
  <h4>Prenotazioni</h4>
@@ -135,7 +135,7 @@ const DOCS = {
  <h4>I tuoi diritti</h4>
  <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, opposizione e portabilità scrivendo a torinosuite@gmail.com, e proporre reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
  <p>Il conferimento dei dati del modulo è facoltativo, ma senza di essi non possiamo risponderti.</p>
- <p>Ultimo aggiornamento: 17 ottobre 2026.</p>`]
+ <p>Ultimo aggiornamento: 15 novembre 2026.</p>`]
 };
 
 /* ---------- utilità ---------- */
