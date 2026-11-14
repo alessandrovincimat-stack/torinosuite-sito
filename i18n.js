@@ -251,7 +251,7 @@ const EN = {
 "pulizia": "cleaning",
 "a soggiorno": "per stay",
 "Pagamento sicuro online": "Secure online payment",
-"Paghi con carta al momento della prenotazione; la tassa di soggiorno è indicata a parte.": "You pay by card when you book; the tourist tax is shown separately.",
+"Paghi con carta al momento della prenotazione. La tassa di soggiorno (3,80 € a persona a notte) è inclusa nel totale; nel riepilogo compare come “Opzioni aggiuntive”.": "You pay by card when you book. The tourist tax (€3.80 per person per night) is included in the total; in the summary it appears as “Additional options”.",
 "Nessuna chiave: entri con un codice personale ricevuto prima dell'arrivo.": "No keys: you enter with a personal code received before arrival.",
 "Assistenza diretta": "Direct assistance",
 "Una persona reale risponde alle tue domande, prima e durante il soggiorno.": "A real person answers your questions, before and during your stay.",
