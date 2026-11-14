@@ -6,31 +6,37 @@
  "alloggi": {
   "san-carlo": {
    "da": 144,
+   "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 70
   },
   "vittorio": {
    "da": 124,
+   "sconto": 36,
    "notte_piu_bassa": "2026-12-03",
    "notti_libere": 69
   },
   "carlo-alberto": {
    "da": 108,
+   "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 51
   },
   "carignano": {
    "da": 160,
+   "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 70
   },
   "carlo-felice": {
    "da": 118,
+   "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 65
   },
   "borgone": {
    "da": 70,
+   "sconto": 22,
    "notte_piu_bassa": "2026-11-30",
    "notti_libere": 68,
    "pulizia": 30
