@@ -225,6 +225,24 @@ function refreshButtons() {
   });
 }
 
+/* ---------- prezzi "da X" (prices.json, prodotto ogni giorno dal Motore prezzi; se manca o e' vecchio non si mostra nulla) ---------- */
+async function loadPrices() {
+  try {
+    const r = await fetch('prices.json?v=' + Math.floor(Date.now()/36e5), {cache:'no-cache'});
+    if (!r.ok) return;
+    const P = await r.json();
+    const age = (Date.now() - new Date(P.aggiornato + 'T12:00:00').getTime()) / 864e5;
+    if (!(age < 4) || !P.alloggi) return;
+    $$('[data-px]').forEach(el => {
+      const p = P.alloggi[el.dataset.px];
+      if (!p || !(p.da > 0)) return;
+      const extra = p.pulizia ? ' · ' + tt('pulizia') + ' ' + p.pulizia + ' € ' + tt('a soggiorno') : '';
+      el.innerHTML = '<b>' + tt('Da ' + p.da + ' € a notte') + '</b><small>' + tt('Tariffa diretta · tassa di soggiorno esclusa') + extra + '</small>';
+      el.hidden = false;
+    });
+  } catch (_) {}
+}
+
 /* ---------- elenco alloggi + gallerie ---------- */
 const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">';
 (() => {
@@ -244,7 +262,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
       gal = `<div class="gal"><div><img src="img/mark-sand.png" alt=""><p>Via Borgone 63 · Torino</p></div></div>`;
     }
     el.innerHTML = `${gal}<div>
-      <span class="tag">${r.tag}</span><h3>${r.name}</h3><div class="sz">${r.sz}</div>${FIT[r.slug]?`<div class="fit">${FIT[r.slug]}</div>`:''}
+      <span class="tag">${r.tag}</span><h3>${r.name}</h3><div class="sz">${r.sz}</div><div class="px" data-px="${r.slug}" hidden></div>${FIT[r.slug]?`<div class="fit">${FIT[r.slug]}</div>`:''}
       <a class="where addr${r.slug==='borgone'?' far':''}" target="_blank" rel="noopener" data-addr="${r.slug==='borgone'?ADDR_BORGONE:ADDR_CA}" href="${mapHref(r.slug==='borgone'?ADDR_BORGONE:ADDR_CA)}"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>${r.slug==='borgone'?'Via Borgone 63 · fuori dal palazzo di Via Carlo Alberto, in un\'altra zona di Torino':'Via Carlo Alberto 31 · centro storico, stesso palazzo'}</a>
       <p>${r.desc}</p>
       <div class="chips">${r.chips.map(c=>`<span>${c}</span>`).join('')}</div>
@@ -275,6 +293,7 @@ const ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     }
   });
   refreshButtons();
+  loadPrices();
   $$('[data-book]').forEach(b => b.onclick = () => openFrame(b.dataset.url, tt('Prenota · ' + ROOMS.find(x=>x.id==b.dataset.book).name)));
 })();
 

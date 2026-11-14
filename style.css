@@ -450,6 +450,10 @@ html[lang="en"] header.top.solid .lang [data-l="it"]{opacity:.5}
 .qstrip q:before,.qstrip q:after{content:""}
 .qstrip span{display:block;margin-top:8px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brown-m);font-weight:600}
 .apt .fit{margin:2px 0 10px;font-size:.8rem;letter-spacing:.04em;color:var(--brown-m)}
+.apt .px{margin:-6px 0 14px;display:flex;flex-direction:column;gap:2px}
+.apt .px[hidden]{display:none}
+.apt .px b{font-family:var(--serif);font-size:1.5rem;font-weight:500;color:var(--brown-d)}
+.apt .px small{font-size:.78rem;letter-spacing:.03em;color:var(--brown-m)}
 .long{background:var(--brown-d);color:#fff;text-align:center}
 .long h2{color:#fff}.long h2 em{color:var(--sand)}
 .long .eyebrow{color:var(--sand)}

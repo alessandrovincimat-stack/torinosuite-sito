@@ -1,0 +1,39 @@
+{
+ "aggiornato": "2026-11-14",
+ "dati_del": "2026-11-14",
+ "giorni": 90,
+ "soggiorno_min_max": 3,
+ "alloggi": {
+  "san-carlo": {
+   "da": 150,
+   "notte_piu_bassa": "2026-12-08",
+   "notti_libere": 70
+  },
+  "vittorio": {
+   "da": 130,
+   "notte_piu_bassa": "2026-12-03",
+   "notti_libere": 69
+  },
+  "carlo-alberto": {
+   "da": 113,
+   "notte_piu_bassa": "2026-12-08",
+   "notti_libere": 51
+  },
+  "carignano": {
+   "da": 167,
+   "notte_piu_bassa": "2026-12-08",
+   "notti_libere": 70
+  },
+  "carlo-felice": {
+   "da": 123,
+   "notte_piu_bassa": "2026-12-08",
+   "notti_libere": 65
+  },
+  "borgone": {
+   "da": 70,
+   "notte_piu_bassa": "2026-11-30",
+   "notti_libere": 68,
+   "pulizia": 30
+  }
+ }
+}
