@@ -5,27 +5,27 @@
  "soggiorno_min_max": 3,
  "alloggi": {
   "san-carlo": {
-   "da": 150,
+   "da": 144,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 70
   },
   "vittorio": {
-   "da": 130,
+   "da": 124,
    "notte_piu_bassa": "2026-12-03",
    "notti_libere": 69
   },
   "carlo-alberto": {
-   "da": 113,
+   "da": 108,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 51
   },
   "carignano": {
-   "da": 167,
+   "da": 160,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 70
   },
   "carlo-felice": {
-   "da": 123,
+   "da": 118,
    "notte_piu_bassa": "2026-12-08",
    "notti_libere": 65
   },
