@@ -242,7 +242,7 @@ const EN = {
 "senza intermediari": "no middlemen",
 "Tariffa diretta": "Direct rate",
 "Prezzo e disponibilità in tempo reale, direttamente dal nostro calendario.": "Real-time price and availability, straight from our calendar.",
-"Prezzi più bassi che sui portali, con disponibilità in tempo reale dal nostro calendario.": "Lower prices than on the booking portals, with real-time availability from our calendar.",
+"Prenoti direttamente con noi, con prezzo e disponibilità in tempo reale dal nostro calendario.": "You book directly with us, with real-time price and availability from our calendar.",
 "Tariffa diretta · tassa di soggiorno esclusa": "Direct rate · tourist tax not included",
 "pulizia": "cleaning",
 "a soggiorno": "per stay",
