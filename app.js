@@ -237,7 +237,7 @@ async function loadPrices() {
       const p = P.alloggi[el.dataset.px];
       if (!p || !(p.da > 0)) return;
       const extra = p.pulizia ? ' · ' + tt('pulizia') + ' ' + p.pulizia + ' € ' + tt('a soggiorno') : '';
-      el.innerHTML = '<b>' + tt('Da ' + p.da + ' € a notte') + '</b><small>' + tt('Tariffa diretta · tassa di soggiorno esclusa') + extra + '</small>';
+      el.innerHTML = '<b>' + tt('Da ' + p.da + ' € a notte') + '</b>' + (p.sconto ? '<em>' + tt('Sconto diretto \u2212' + p.sconto + '% incluso') + '</em>' : '') + '<small>' + tt('Tariffa diretta · tassa di soggiorno esclusa') + extra + '</small>';
       el.hidden = false;
     });
   } catch (_) {}

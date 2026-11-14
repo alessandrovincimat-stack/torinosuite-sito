@@ -9,6 +9,7 @@ const RULES = [
   [/^Immagine (\d+)$/, (m,a) => `Image ${a}`],
   [/^Prenota dal (\S+) al (\S+)$/, (m,a,b) => `Book ${a} – ${b}`],
   [/^Prenota · (.+)$/, (m,a) => `Book · ${a}`],
+  [/^Sconto diretto \u2212(\d+)% incluso$/, (m,a) => `Direct discount \u2212${a}% included`],
   [/^Da (\d+) € a notte$/, (m,a) => `From €${a} a night`],
   [/^(\d+) notti?$/, (m,a) => `${a} night${+a>1?'s':''}`],
   [/^(.+?) · (\d+) notti? · (\d+) ospiti? — scegli l'alloggio per vedere prezzo e disponibilità\.$/, (m,d,n,g) => `${d} · ${n} night${+n>1?'s':''} · ${g} guest${+g>1?'s':''} — choose an apartment to see price and availability.`],
