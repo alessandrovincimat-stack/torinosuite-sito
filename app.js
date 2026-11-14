@@ -1,7 +1,7 @@
 /* Torino Suite — sito. Configurazione in alto, logica sotto. */
 const CONFIG = {
   smoobu: 'https://booking.smoobu.com/9A362608',        // pagina diretta Smoobu (verificata 17/10/2026)
-  contactEndpoint: '',                                  // es. 'https://.../api/contatto' ; se vuoto si apre la mail precompilata
+  contactEndpoint: 'https://matcostruzioni.myqnapcloud.com:4600/pub/contatto',                                  // es. 'https://.../api/contatto' ; se vuoto si apre la mail precompilata
   contactEmail: 'torinosuite@gmail.com',
   eventsUrl: 'events.json',                             // calendario eventi: lo aggiorna ogni settimana l'attivita' programmata
   whatsapp: '393482928606',                                         // numero con prefisso, senza + (es. '393331234567'); vuoto = pulsante WhatsApp nascosto
