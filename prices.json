@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-11-14",
- "dati_del": "2026-11-14",
+ "aggiornato": "2026-11-15",
+ "dati_del": "2026-11-15",
  "giorni": 90,
  "soggiorno_min_max": 3,
  "alloggi": {
@@ -8,13 +8,13 @@
    "da": 144,
    "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
-   "notti_libere": 70
+   "notti_libere": 71
   },
   "vittorio": {
    "da": 124,
    "sconto": 36,
    "notte_piu_bassa": "2026-12-03",
-   "notti_libere": 69
+   "notti_libere": 68
   },
   "carlo-alberto": {
    "da": 108,
@@ -25,20 +25,20 @@
   "carignano": {
    "da": 160,
    "sconto": 36,
-   "notte_piu_bassa": "2026-12-08",
-   "notti_libere": 70
+   "notte_piu_bassa": "2026-11-23",
+   "notti_libere": 71
   },
   "carlo-felice": {
    "da": 118,
    "sconto": 36,
    "notte_piu_bassa": "2026-12-08",
-   "notti_libere": 65
+   "notti_libere": 66
   },
   "borgone": {
    "da": 70,
    "sconto": 22,
    "notte_piu_bassa": "2026-11-30",
-   "notti_libere": 68,
+   "notti_libere": 69,
    "pulizia": 30
   }
  }
